@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-web-libros-responsive.css">
+    <title>Reading is fun!</title>
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"></nav> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+        <div class="container-fluid" id="header">
+          <a class="navbar-brand" href="#">Read!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="carrousel">
+    <div id="carouselExampleCaptions" class="carousel slide mx-auto">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/daisy-jones-carousel.jpeg" class="img-fluid d-block mx-auto border border-success rounded" alt="daisy-jones">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Daisy Jones & The Six</h5>
+            <p>Watch the TV Series on Prime Video!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/the-martian-carrousel.jpeg" class="img-fluid d-block mx-auto border border-success rounded" alt="the-martian">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Martian</h5>
+            <p>Watch the movie on Disney+!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/wwz-carousel.jpg" class="img-fluid d-block mx-auto border border-success rounded" alt="World-War-Z-Max-Brooks">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>World War Z</h5>
+            <p>Watch the movie on Netflix!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/it-carrousel.jpeg" class="img-fluid d-block mx-auto border border-success rounded" alt="it-carrousel">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>It: Chapter 1</h5>
+            <p>Watch the movie on Netflix!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+    <div class="container-fluid d-flex ms-3 mx-auto" id="body-reads">
+        <div class="row">
+            <div class="col-3">
+                <ul class="list-group list-group-flush me-4">
+                    <li class="list-group-item"><h2>Categories</h2></li>
+                    <li class="list-group-item"><a href="#">Art</a></li>
+                    <li class="list-group-item"><a href="#">History</a></li>
+                    <li class="list-group-item"><a href="#">Horror</a></li>
+                    <li class="list-group-item"><a href="#">Fantasy</a></li>
+                    <li class="list-group-item"><a href="#">Sci-Fi</a></li>
+                    <li class="list-group-item"><a href="#">Drama</a></li>
+                    <li class="list-group-item"><a href="#">Biography</a></li>
+                    <li class="list-group-item"><a href="#">All Genres</a></li>
+                </ul>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><h2>Bookshelves</h2></li>
+                    <li class="list-group-item"><a href="#">Currently Reading</a></li>
+                    <li class="list-group-item"><a href="#">Want to Read</a></li>
+                    <li class="list-group-item"><a href="#">Collection</a></li>
+                </ul>                                      
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center flex-wrap">
+                <div class="card text-center col-xl-3 col-md-12">
+                    <img src="/img/wwz.jpg" class= "img-thumbnail custom-image-size mx-auto" alt="World-War-Z-Max-Brooks">
+                    <div class="card-body">
+                        <h3 class="card-title">World War Z</h3>
+                        <h5>By Max Brooks</h5>
+                        <p class="card-text">Max Brooks chronicles the devastating Zombie War, recounting first-hand experiences of survivors worldwide, from decimated cities to remote landscapes. Through personal testimonies, he captures the profound fear, horror, and enduring spirit of resistance that defined humanity's struggle against the undead. The narrative spans from the origins in New Dachang, China, to the Redeker Plan in Southern Africa, offering a comprehensive and chilling account of the epochal event.</p>
+                        <a href="#" class="btn btn-outline-success">Want to read</a>
+                    </div>
+                </div>
+                <div class="card text-center col-xl-3 col-md-12">
+                    <img src="/img/the-martian.jpg" class="img-thumbnail custom-image-size mx-auto" alt="The-Martian-Andy-Weir">
+                    <div class="card-body">
+                        <h3 class="card-title">The Martian</h3>
+                        <h5>By Andy Weir</h5>
+                        <p class="card-text">Astronaut Mark Watney, left for dead on Mars after a dust storm, battles isolation and limited resources while his crew believes he perished. With ingenuity, engineering skills, and an unwavering determination, Watney confronts numerous challenges to survive against impossible odds. The gripping narrative explores his relentless fight for survival and resilience in the face of overwhelming challenges.</p>
+                        <a href="#" class="btn btn-outline-success">Want to read</a>
+                    </div>
+                </div>
+                <div class="card text-center col-xl-3 col-md-12">
+                    <img src="/img/readyplayerone.jpeg" class="img-thumbnail custom-image-size mx-auto" alt="Ready-Player-One-Ernest-Cline">
+                    <div class="card-body">
+                        <h3 class="card-title">Ready Player One</h3>
+                        <h5>By Ernest Cline</h5>
+                        <p class="card-text">In the dystopian year 2044, teenager Wade Watts escapes the bleak reality by immersing himself in the virtual utopia of the OASIS. His life takes a perilous turn when he discovers a clue in the digital realm, triggering a ruthless competition where players are willing to kill for the ultimate prize tied to the creator's pop culture obsession. As Wade races to survive, the narrative explores the intersection of virtual and real worlds, confronting his desperate desire to escape reality.</p>
+                        <a href="#" class="btn btn-outline-success">Want to read</a>
+                    </div>
+                </div>
+        <div class="row">
+          <div class="d-flex justify-content-center flex-wrap">
+                <div class="card text-center col-xl-3 col-md-12">
+                    <img src="/img/doctor-sleep.jpg" class="img-thumbnail custom-image-size mx-auto" alt="Doctor-Sleep-Stephen-King">
+                    <div class="card-body">
+                        <h3 class="card-title">Doctor Sleep</h3>
+                        <h5>By Stephen King</h5>
+                        <p class="card-text">In "Doctor Sleep," Dan Torrance, haunted by his traumatic past at the Overlook Hotel, grapples with his psychic abilities, now employed in comforting the dying. The True Knot, a quasi-immortal tribe, preys on children with the "shining," driving a battle between good and evil. The narrative unfolds as Dan, now "Doctor Sleep," must protect a young girl named Abra Stone with an exceptionally powerful shining from the malevolent forces that seek to exploit her gift.</p>
+                        <a href="#" class="btn btn-outline-success">Want to read</a>
+                    </div>
+                </div>
+                <div class="card text-center col-xl-3 col-md-12">
+                  <img src="/img/asimov.jpeg" class="img-thumbnail custom-image-size mx-auto" alt="Issac-Asimov-Fundación">
+                  <div class="card-body">
+                      <h3 class="card-title">Fundación</h3>
+                      <h5>By Issac Asimov</h5>
+                      <p class="card-text">For twelve thousand years the Galactic Empire has ruled supreme. Now it is dying. But only Hari Seldon, creator of the revolutionary science of psychohistory, can see into the future--to a dark age of ignorance, barbarism, and warfare that will last thirty thousand years. To preserve knowledge and save humankind, Seldon gathers the best minds in the Empire--both scientists and scholars--and brings them to a bleak planet at the edge of the galaxy to serve as a beacon of hope for future generations. He calls his sanctuary the Foundation.</p>
+                      <a href="#" class="btn btn-outline-success">Want to read</a>
+                  </div>
+              </div>            
+              <div class="card text-center col-xl-3 col-md-12">
+                  <img src="/img/daisy-jones.jpg" class="img-thumbnail custom-image-size mx-auto" alt="Daisy-Jones-Taylor-Jenkins-Red">
+                  <div class="card-body">
+                      <h3 class="card-title">Daisy Jones & The Six</h3>
+                      <h5>By Taylor Jenkins Red</h5>
+                      <p class="card-text">Daisy, a young woman in 1960s L.A., immerses herself in the rock 'n' roll scene, craving fame and a chance to perform at the Whisky a Go Go. The novel unfolds as an oral history, detailing the rise of The Six, a band led by brooding Billy Dunne, whose tumultuous journey intersects with Daisy's, resulting in a legendary collaboration and a vivid portrayal of the '70s music scene by Taylor Jenkins Reid.</p>
+                      <a href="#" class="btn btn-outline-success">Want to read</a>
+                  </div>
+              </div>
+          </div>
+        <div class="row">    
+          <div class="d-flex justify-content-center flex-wrap">          
+              <div class="card text-center col-xl-3 col-md-12">
+                  <img src="/img/it.jpg" class="img-thumbnail custom-image-size mx-auto" alt="It-Stephen-King">
+                  <div class="card-body">
+                      <h3 class="card-title">It</h3>
+                      <h5>By Stephen King</h5>
+                      <p class="card-text">In Derry, Maine, a group of seven friends faced a haunting horror as teenagers. Now successful adults, they are compelled to return to confront an enduring nightmare and an unnamed evil that still plagues their hometown. The force that binds them reveals an unrelenting and unsolved menace.</p>
+                      <a href="#" class="btn btn-outline-success">Want to read</a>
+                  </div>
+              </div>
+              <div class="card text-center col-xl-3 col-md-12">
+                  <img src="/img/hill-house.jpg" class="img-thumbnail custom-image-size mx-auto" alt="Hill-House-Shirley">
+                  <div class="card-body">
+                      <h3 class="card-title">The Haunting of Hill House</h3>
+                      <h5>By Shirley Jackson</h5>
+                      <p class="card-text">It is the story of four seekers who arrive at a notoriously unfriendly pile called Hill House: Dr. Montague, an occult scholar looking for solid evidence of a "haunting"; Theodora, the lighthearted assistant; Eleanor, a friendless, fragile young woman well acquainted with poltergeists; and Luke, the future heir of Hill House. At first, their stay seems destined to be merely a spooky encounter with inexplicable phenomena. But Hill House is gathering its powers—and soon it will choose one of them to make its own.</p>
+                      <a href="#" class="btn btn-outline-success">Want to read</a>
+                  </div>
+              </div>                             
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div> 
+  </div>
+    <div class="d-flex justify-content-center text-center">
+    <nav aria-label="pages">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+    </nav>
+  </div> 
+   
+    <footer class="bg-dark text-light text-center p-3">
+        <div class="container">
+          <p>Reading is Fun! · 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
